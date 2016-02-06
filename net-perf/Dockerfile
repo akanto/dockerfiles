@@ -1,3 +1,3 @@
-FROM fedora:23
+FROM centos:7
 
-RUN dnf install -y iputils net-tools iperf3 qperf iproute && dnf clean all
+RUN yum install -y iputils net-tools iperf3 qperf iproute python && yum clean all
