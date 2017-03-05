@@ -3,7 +3,7 @@ FROM centos:7
 RUN yum install -y epel-release && yum clean all
 RUN yum install -y redhat-lsb supervisor wget && yum clean all
 
-ENV IDRIVE_VERSION 1.1.6
+ENV IDRIVE_VERSION 1.1.7
 
 # ADD https://www.idrive.com/ldb/downloads/idrive-datacenteredition/IDrive-DataCenterEdition-${IDRIVE_VERSION}.tar.gz /IDrive-DataCenterEdition.tar.gz
 COPY IDrive-DataCenterEdition-${IDRIVE_VERSION}.tar.gz /IDrive-DataCenterEdition.tar.gz
